@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/ -->
+<html lang="zh-CN"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="张鑫旭的个人博客_web前端技术文章_CSS3 filter:drop-shadow滤镜与box-shadow区别应用">
+<meta name="keywords" content="web前端,HTML5,CSS3,jQuery,SVG,canvas">
+<meta name="author" content="张鑫旭,zhangxinxu">
+<title>CSS3 filter:drop-shadow滤镜与box-shadow区别应用 «  张鑫旭-鑫空间-鑫生活</title>
+<link rel="stylesheet" href="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/style.css">
+<link rel="pingback" href="http://www.zhangxinxu.com/wordpress/xmlrpc.php">
+ 
+<link rel="alternate" type="application/rss+xml" title="张鑫旭-鑫空间-鑫生活 » Feed" href="http://www.zhangxinxu.com/wordpress/feed/">
+<link rel="alternate" type="application/rss+xml" title="张鑫旭-鑫空间-鑫生活 » 评论Feed" href="http://www.zhangxinxu.com/wordpress/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="张鑫旭-鑫空间-鑫生活 » CSS3 filter:drop-shadow滤镜与box-shadow区别应用评论Feed" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/feed/">
+<link rel="stylesheet" id="wp-pagenavi-css" href="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/pagenavi-css.css" type="text/css" media="all">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.zhangxinxu.com/wordpress/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.zhangxinxu.com/wordpress/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="改变CSS世界纵横规则的writing-mode属性" href="http://www.zhangxinxu.com/wordpress/2016/04/css-writing-mode/">
+<link rel="next" title="理解CSS3 max/min-content及fit-content等width值" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-width-max-contnet-min-content-fit-content/">
+<meta name="generator" content="WordPress 4.1.17">
+<link rel="canonical" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/">
+<link rel="shortlink" href="http://www.zhangxinxu.com/wordpress/?p=5380">
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<link href="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/bdsstyle.css" rel="stylesheet" type="text/css"></head>
+<body class="single single-post postid-5380 single-format-standard"><iframe frameborder="0" style="display: none;"></iframe><div id="bdshare_s" style="display: block;"><iframe id="bdsIfr" style="position:absolute;display:none;z-index:9999;" frameborder="0"></iframe><div id="bdshare_l" style="display: none;"><div id="bdshare_l_c"><h6>分享到</h6><ul><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_mshare mshare">一键分享</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_qzone qqkj">QQ空间</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_tsina xlwb">新浪微博</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_bdysc bdysc">百度云收藏</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_renren rrw">人人网</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_tqq txwb">腾讯微博</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_bdxc bdxc">百度相册</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_kaixin001 kxw">开心网</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_tqf txpy">腾讯朋友</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_tieba bdtb">百度贴吧</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_douban db">豆瓣网</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_tsohu shwb">搜狐微博</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_bdhome bdhome">百度新首页</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_sqq sqq">QQ好友</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_thx thx">和讯微博</a></li><li><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="bds_more">更多...</a></li></ul><p><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" class="goWebsite">百度分享</a></p></div></div></div>
+<div id="page">
+<div id="header" role="banner">
+	<div id="headerimg">
+		<a href="http://www.zhangxinxu.com/" class="page_logo">张鑫旭-鑫空间-鑫生活</a>
+		<div class="description">it's my whole life!</div>
+	</div>
+    <div id="menubar">
+<ul class="menu_tab">
+<li class="">
+<a href="http://www.zhangxinxu.com/" class="boss">网站首页</a>
+<a href="http://www.zhangxinxu.com/php/microCode.php">我的微码</a>
+<a href="http://www.zhangxinxu.com/php/advise.php">建议反馈</a>
+</li>
+<li class="on">
+<a class="boss" href="http://www.zhangxinxu.com/wordpress/">前端技术</a>
+<a href="http://www.zhangxinxu.com/wordpress/?cat=3">css</a>
+<a href="http://www.zhangxinxu.com/wordpress/?cat=5">js/jQuery</a>
+<a href="http://www.zhangxinxu.com/wordpress/?cat=198">翻译</a>
+</li>
+<li class="">
+<a class="boss" href="http://www.zhangxinxu.com/life/">生活与创作</a>
+<a href="http://www.zhangxinxu.com/life/?cat=3">生活</a>
+<a href="http://www.zhangxinxu.com/life/?cat=5">散文</a>
+<a href="http://www.zhangxinxu.com/life/?cat=4">小说</a>
+</li>
+<li class="">
+<span class="boss">前端在线资源</span>
+<a href="http://www.zhangxinxu.com/css3/">CSS3参考</a>
+<a href="http://www.zhangxinxu.com/jq/api14/">jQuery1.4参考</a>
+</li>
+</ul><form method="get" id="searchform" action="http://www.zhangxinxu.com/wordpress/">
+<label class="hidden" for="s">Search for:</label>
+<div><input type="search" placeholder="翻页太辛苦，试试直接搜索" value="" name="s" id="s">
+<input type="submit" id="searchsubmit" data-value="Search" value="搜索">
+</div>
+</form>
+    </div>
+</div>
+<script type="text/javascript" async="" src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/ga.js"></script><script>
+var isSlideHide = false;
+if (window.localStorage) {
+	var slideHideTime = +localStorage.slideHideTime;
+	var slideNowTime = +new Date();
+	if (screen.width < 1600 && slideNowTime - slideHideTime < 1000*60*30) {
+		// 不足半小时
+		isSlideHide = true;
+		document.getElementById("page").className = "slide_hide";
+	} else if (slideHideTime > slideNowTime) {
+		localStorage.removeItem('slideHideTime');
+	}
+}
+</script>
+<div class="the_main">
+	<div id="content" class="widecolumn" role="main">
+    <div class="shink_rel"><a href="javascript:" id="shinkSlide" class="shink_a" title="收起右边栏" style="display: inline;">►</a></div>
+<script>if (window.localStorage && window.isSlideHide) {
+	(function() {
+		var eleShink = document.getElementById("shinkSlide");	
+		eleShink.title = "展开右边栏";
+		// 左箭头
+		eleShink.innerHTML = "&#x25c4;";
+	})();
+}</script>
+	
+		<div class="navigation">
+			<div class="alignleft">« <a href="http://www.zhangxinxu.com/wordpress/2016/04/css-writing-mode/" rel="prev">改变CSS世界纵横规则的writing-mode属性</a></div>
+			<div class="alignright"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-width-max-contnet-min-content-fit-content/" rel="next">理解CSS3 max/min-content及fit-content等width值</a> »</div>
+		</div>
+
+		<div class="post-5380 post type-post status-publish format-standard hentry category-css tag-box-shadow tag-drop-shadow tag-filter" id="post-5380">
+			<h2>CSS3 filter:drop-shadow滤镜与box-shadow区别应用<span id="qrCode" class="qr_code"><img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/api.php"></span></h2>
+			<div class="entry">
+            	<div class="postmetadata alt">
+					<small>
+												这篇文章发布于 2016年05月18日，星期三，01:07，归类于 <a href="http://www.zhangxinxu.com/wordpress/category/css/" rel="category tag">css相关</a>。                        阅读 27727 次, 今日 137 次					</small>
+				</div>
+				<p class="link">by <a href="http://www.zhangxinxu.com/">zhangxinxu</a> from <a href="http://www.zhangxinxu.com/">http://www.zhangxinxu.com</a><br>
+本文地址：<a href="http://www.zhangxinxu.com/wordpress/?p=5380">http://www.zhangxinxu.com/wordpress/?p=5380</a></p>
+<p>要使用标准的CSS3实现某元素的投影效果，有两个套路，第一个就是使用常见的<code>box-shadow</code>, 第二个就是使用CSS3的<code>filter</code>阴影滤镜<code>drop-shadow</code>，那这两个阴影实现有什么具体的差异呢？</p>
+<h3>一、兼容性不一</h3>
+<p>CSS3 <code>box-shadow</code>从IE9浏览器开始就支持了，如下表示意：<br>
+<iframe width="100%" height="380" src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/embed.html" frameborder="0"></iframe></p>
+<p>而<code>filter</code>中的<code>drop-shadow</code>IE13才开始支持，移动端Android4.4才开始支持，细想一下，其实离在移动端愉快使用就差一口气，明天的今天，大家说不定就在载歌载舞了：<br>
+<iframe width="100%" height="380" src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/embed(1).html" frameborder="0"></iframe></p>
+<h3>二、同样的参数值，表现效果有差异</h3>
+<p><code>filter</code>中的<code>drop-shadow</code>语法如下：</p>
+<div class="zxx_code">
+<pre>filter: drop-shadow(x偏移, y偏移, 模糊大小, 色值);</pre>
+</div>
+<p>例如：</p>
+<div class="zxx_code">
+<pre>filter:drop-shadow(5px 5px 10px black)</pre>
+</div>
+<p>表示右下5像素偏移，10像素模糊的黑色阴影。眼见为实，看下面的图片示意（实时效果，请使用Chrome或手机浏览器查看）：</p>
+<p><img data-src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg" width="128" height="96" style="-webkit-filter:drop-shadow(5px 5px 10px black);filter:drop-shadow(5px 5px 10px black);" src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/mm1.jpg"></p>
+<p>但是，如果使用同样参数值的<code>box-shadow</code>，例如：</p>
+<div class="zxx_code">
+<pre>box-shadow: 5px 5px 10px black;</pre>
+</div>
+<p>会发现，<code>box-shadow</code>的阴影距离更小，色值要更深：</p>
+<p><img data-src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg" width="128" height="96" style="box-shadow: 5px 5px 10px black;"></p>
+<h3>三、drop-shadow没有内阴影效果</h3>
+<p><code>box-shadow</code>支持<code>inset</code>内阴影，如：</p>
+<div class="zxx_code">
+<pre>box-shadow: inset 5px 5px 10px black;</pre>
+</div>
+<p>但是，<code>drop-shadow</code>却没有。</p>
+<h3>四、drop-shadow不能阴影叠加</h3>
+<p><code>box-shadow</code>有个超屌的特性，就是阴影可以任意累加，因此，理论上我们可以使用<code>box-shadow</code>生成任意的图片，包括张含韵妹子年轻时候的写真，具体可参加“<a href="http://www.zhangxinxu.com/wordpress/?p=3813" target="_blank">CSS3 box-shadow盒阴影图形生成技术</a>”一文。</p>
+<p>但是<code>filter</code>中的<code>drop-shadow</code>就只能抱歉了，我就是一锤子买卖。没钱也这么任性！</p>
+<p>说到现在，体现的尽是<code>drop-shadow</code>的不好，兼容性不够，内阴影不支持，多阴影也不支持；感觉就像是小蚯蚓，失恋了，工作也没了，存在的意义好像就成了白富美的谈资。</p>
+<p>真的是这样吗？显然非也！所谓存在既有道理。</p>
+<p><code>drop-shadow</code>有一个很厉害的特性，也就这一个特性，让其以后有足够的机会大放异彩！那就是，<code>drop-shadow</code>才是真正意义上的投影，而<code>box-shadow</code>只是盒阴影而已。</p>
+<p>什么意思呢？</p>
+<h3>五、阴影 vs 盒阴影</h3>
+<p>实践出真知，下面我们用CSS <code>border</code>写一个虚线框，例如：</p>
+<div class="zxx_code">
+<pre>border: 10px dashed #beceeb;</pre>
+</div>
+<p>结果长相如下：</p>
+<div style="width:50px; height:50px;border: 10px dashed #beceeb;"></div>
+<p>然后，我们分别应用<code>box-shadow</code>和<code>drop-shadow</code>滤镜：</p>
+<div class="zxx_code">
+<pre>border: 10px dashed #beceeb; box-shadow: 5px 5px 10px black;</pre>
+</div>
+<div class="zxx_code">
+<pre>border: 10px dashed #beceeb; filter: drop-shadow(5px 5px 10px black);</pre>
+</div>
+<p>结果：</p>
+<div style="width:50px; height:50px;border: 10px dashed #beceeb;box-shadow: 5px 5px 10px black;"></div>
+<div style="width:50px; height:50px;border: 10px dashed #beceeb;-webkit-filter: drop-shadow(5px 5px 10px black);filter: drop-shadow(5px 5px 10px black);margin-top:30px;"></div>
+<p><script>if(!history.pushState||typeof document.msHidden!='undefined'){document.write('IE浏览器用户可以参见下面Chrome浏览器截图：
+<p><img data-src="http://image.zhangxinxu.com/image/blog/201605/2016-05-18_000104.png" width="216" height="257" alt="Chrome浏览器下的截图" class="alignnone" /></p>
+<p>');}</script></p>
+<p>怎么样？是不是本性暴露了！</p>
+<p><code>box-shadow</code>顾名思意“盒阴影”，只是盒子的阴影；你想啊，这盒子中间明明是透明的，结果，阴影的时候，居然光线没有穿透；但是<code>drop-shadow</code>就符合真实世界的投影，非透明的颜色，我就有投影；透明部分，光线穿过，没投影，而什么盒子不盒子的，跟我没有任何关系。</p>
+<p><code>drop-shadow</code>不仅可以穿透代码构建的元素的透明部分，PNG图片的透明部分也是可以穿透的，如下图：</p>
+<p><img data-src="http://image.zhangxinxu.com/image/blog/201605/mm1.png" width="128" height="96" style="-webkit-filter:drop-shadow(2px 2px 2px black);filter:drop-shadow(2px 2px 2px black);"></p>
+<p>于是，曾经困扰我们的一些老大难的问题就有了很好的解决思路了！</p>
+<h3>六、drop-shadow的实际应用</h3>
+<p>我们实现带有箭头指向的浮层面板的时候，考虑到兼容性，三角基本上都是使用<code>border</code>绘制的，没法<code>box-shadow</code>，但是，矩形部分设计师希望是有阴影的，于是，就会出现下图所示的情况：<br>
+<img data-src="http://image.zhangxinxu.com/image/blog/201605/2016-05-18_004250.png" width="304" height="201" alt="没有阴影的三角" class="alignnone"></p>
+<p>箭头没有阴影，蒙混过关。</p>
+<p>后来，又捣腾了一个办法，就使用矩形进行45deg旋转，两个<code>box-shadow</code>合体，但是，会存在阴影重叠的一部分，说穿了，还是效果不完美。</p>
+<p>现在，有了<code>drop-shadow</code>，阴影就真的变成了阴影了。</p>
+<p>您可以狠狠地点击这里：<a href="http://www.zhangxinxu.com/study/201605/drop-shadow-point-to.html" target="_blank">filter:drop-shadow实现尖角带阴影的提示面板demo</a></p>
+<p>一切尽在截图中：<br>
+<img data-src="http://image.zhangxinxu.com/image/blog/201605/2016-05-18_004916.png" width="498" height="487" alt="drop-shadow的实际应用效果截图" class="alignnone"></p>
+<h3>七、结束语</h3>
+<p>低版本IE浏览器下，其实也有<code>Shadow</code>滤镜，不过是IE的私有滤镜。如果想要实现兼容IE9+的投影效果，估计要借助SVG来实现了。</p>
+<p><code>drop-shadow</code>特性实在是不得了，我现在已经有很多非常棒的想法，比方说实现位图的色彩渐变动画，以及其他可以减少设计师和前端同学工作成本的技术实现思路，先保密等我先实践实践，等思路成熟再一起交流交流。</p>
+<p>总而言之，虽然<code>drop-shadow</code>滤镜亮点单一，但是这个亮点可以照亮整个北半球。</p>
+<p>感谢阅读，欢迎交流！</p>
+<p><img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/14.gif" align="absmiddle"></p>
+<p class="link">本文为原创文章，包含脚本行为，会经常更新知识点以及修正一些错误，因此转载请保留原出处，方便溯源，避免陈旧错误知识的误导，同时有更好的阅读体验。<br>
+本文地址：<a href="http://www.zhangxinxu.com/wordpress/?p=5380">http://www.zhangxinxu.com/wordpress/?p=5380</a></p>
+<p>（本篇完）<span class="ins_txt">// 想要打赏？点击<a href="javascript:" id="alipayA" title="点击显示二维码">这里</a>。有话要说？点击<a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#comment" title="点击定位到评论">这里</a>。</span></p>
+<div id="daITxz" class="da_article da_bottom">
+                <div class="da_ht">
+                    <span class="l hidden">想找个师兄入门前端？不妨</span>
+                    <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+                </div>
+                <a href="http://course.ptteng.com/" target="_blank" class="da_bottom_ht" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;ITxz&#39;, &#39;xzSchool&#39;, &#39;Not float&#39;]);"></a>
+            </div><div class="similarity"><div class="similar_title">相关文章</div><ul><li><a href="http://www.zhangxinxu.com/wordpress/2016/06/png-icon-change-color-by-css/">PNG格式小图标的CSS任意颜色赋色技术</a> (1.000)</li><li><a href="http://www.zhangxinxu.com/wordpress/2010/07/css%e5%ae%9e%e7%8e%b0%e8%b7%a8%e6%b5%8f%e8%a7%88%e5%99%a8%e7%9a%84box-shadow%e7%9b%92%e9%98%b4%e5%bd%b1%e6%95%88%e6%9e%9c2/">CSS实现跨浏览器的box-shadow盒阴影效果(2)</a> (0.207)</li><li><a href="http://www.zhangxinxu.com/wordpress/2016/11/css-text-decoration-underline-skip-override/">解决文字和text-decoration:underline下划线重叠问题</a> (0.207)</li><li><a href="http://www.zhangxinxu.com/wordpress/2010/04/css%e5%ae%9e%e7%8e%b0%e5%85%bc%e5%ae%b9%e6%80%a7%e7%9a%84%e6%b8%90%e5%8f%98%e8%83%8c%e6%99%afgradient%e6%95%88%e6%9e%9c/">CSS实现兼容性的渐变背景(gradient)效果</a> (0.144)</li><li><a href="http://www.zhangxinxu.com/wordpress/2011/05/ie%e4%b8%8d%e6%94%af%e6%8c%81css3%e5%a4%9a%e8%83%8c%e6%99%afmultiple-backgrounds%e7%9a%84%e6%9b%bf%e4%bb%a3%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/">小tip:IE不支持CSS3多背景的替代解决方案</a> (0.144)</li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/css-svg-filter-image-grayscale/">小tip: 使用CSS将图片转换成黑白(灰色、置灰)</a> (0.144)</li><li><a href="http://www.zhangxinxu.com/wordpress/2012/08/svg-feature-support-bugs/">SVG特征、支持以及一些实际使用问题</a> (0.144)</li><li><a href="http://www.zhangxinxu.com/wordpress/2013/04/es5%e6%96%b0%e5%a2%9e%e6%95%b0%e7%bb%84%e6%96%b9%e6%b3%95/">ES5中新增的Array方法详细说明</a> (0.144)</li><li><a href="http://www.zhangxinxu.com/wordpress/2013/11/css-svg-image-blur/">小tip: 使用CSS将图片转换成模糊(毛玻璃)效果</a> (0.144)</li><li><a href="http://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/">深入理解CSS中的层叠上下文和层叠顺序</a> (0.144)</li><li><a href="http://www.zhangxinxu.com/wordpress/2014/04/css3-icon-%e5%9b%be%e6%a0%87%e7%94%9f%e6%88%90%e6%8a%80%e6%9c%af/">CSS3图标图形生成技术个人攻略</a> (RANDOM - 0.063)</li></ul></div><!-- Tag -->				<div class="wp_share_box">
+                	<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<span class="bds_more">分享到：</span>
+<a class="bds_tsina" title="分享到新浪微博" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#"></a>
+<a class="bds_qzone" title="分享到QQ空间" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#"></a>
+<a class="bds_tqq" title="分享到腾讯微博" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#"></a>
+<a class="bds_t163" title="分享到网易微博" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#"></a>
+<a class="bds_douban" title="分享到豆瓣网" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#"></a>
+<a class="bds_tsohu" title="分享到搜狐微博" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#"></a>
+<a class="shareCount" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" title="累计分享7次">7</a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1954626" src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/bds_s_v2.js"></script>
+
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END --> 
+                </div>
+								<p>标签： <a href="http://www.zhangxinxu.com/wordpress/tag/box-shadow/" rel="tag">box-shadow</a>, <a href="http://www.zhangxinxu.com/wordpress/tag/drop-shadow/" rel="tag">drop-shadow</a>, <a href="http://www.zhangxinxu.com/wordpress/tag/filter/" rel="tag">filter</a></p>			</div>
+		</div>
+        
+        <h3 class="da_title">赞助商广告<span class="sup_span">(<a href="http://www.zhangxinxu.com/sp/support.html" target="_blank">我也要赞助</a>)</span>：</h3>
+        <div class="ad_col2">
+			<div id="adZhuFeng" class="da_zf_x da_bottom">
+            	<div class="da_zf">
+                    <span class="l hidden">如果你月薪不足20K，不妨</span>
+                    <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+                </div>
+            	<a href="http://www.zhufengpeixun.cn/customize/node/index.html" target="_blank" class="da_bottom_n" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;ZHUFENG&#39;, &#39;zhufeng&#39;, &#39;Not float&#39;]);"></a>
+            </div>
+            <!-- 妙味 -->
+            <div id="adMW" class="da_zf_x da_bottom">
+				<div class="da_ym">
+                    <span class="l hidden">这里有最全的web前端开发视频</span>
+                    <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+                </div>
+            	<a href="http://www.miaov.com/?form=zhangxinxu.com" target="_blank" class="da_bottom_y" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;MWAD&#39;, &#39;MiaoWei&#39;, &#39;Not float&#39;]);"></a>
+            	<!-- <a href="/sp/support.html" target="_blank" class="da_bottom_y"></a> -->
+            </div>
+        </div>
+        <div class="ad_col2">
+            <div id="adYideng" class="da_bottom">
+                <div class="da_yd">
+                    <span class="l hidden">如果你有1~3年前端开发经验，不妨</span>
+                    <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+                </div>
+                <a href="http://www.yidengxuetang.com/recruit/?f=zhangxinxu.com" target="_blank" class="da_bottom_w" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;YIDENG&#39;, &#39;yideng&#39;, &#39;Not float&#39;]);"></a>
+            </div>
+            
+        </div>
+
+	﻿
+<div id="respond">
+<h3 id="comments" class="respond_title">发表评论（目前37条评论）</h3>
+<div id="cancel-comment-reply"> 
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#respond" style="display:none;">点击这里取消回复。</a></small>
+</div> 
+
+
+<form action="http://www.zhangxinxu.com/wordpress/wp-comments-post.php" method="post" id="commentform" novalidate="">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required="true" required="">
+<label for="author"><small>名称 (必须)</small></label></p>
+
+<p><input type="email" name="email" id="email" value="" size="22" tabindex="2" aria-required="true" required="">
+<label for="email"><small>邮件地址(不会被公开) (必须)</small></label></p>
+
+<p><input type="url" name="url" id="url" value="" size="22" tabindex="3">
+<label for="url"><small>网站</small></label></p>
+
+
+<!--<p><small><strong>XHTML：</strong>您可以使用这些标签：<code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="提交评论"><span id="commRem" class="ml20" style="color:#cd0000;"></span>
+<input type="hidden" name="comment_post_ID" value="5380" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+ 
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="0fe10f1a58"></p><p style="display: none;"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="1494858857706"></form>
+
+</div>
+
+
+<!-- You can start editing here. -->
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1" id="comment-356077">
+				<div id="div-comment-356077" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/b1f7b06417272a0f1f8f97aaaba92e38" class="avatar avatar-32" height="32" width="32">			<cite class="fn">小二</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-356077">
+			2017年05月8日 15:31</a>		</div>
+
+		<p>张大大  demo里的<br>
+.cor {<br>
+    position: absolute;<br>
+    left: -40px;<br>
+    widtd: 0; height: 0;<br>
+    overflow: hidden;<br>
+    border: 20px solid transparent;<br>
+    border-right-color: #fff;<br>
+}<br>
+宽写错啦 应该是width</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=356077#respond" onclick="return addComment.moveForm( &quot;div-comment-356077&quot;, &quot;356077&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给小二">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-350500">
+				<div id="div-comment-350500" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/8644fc8704f4c1d4f41c438791bf0914" class="avatar avatar-32" height="32" width="32">			<cite class="fn">学习</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-350500">
+			2017年03月13日 02:34</a>		</div>
+
+		<p>有个字母错了。。。http://www.zhangxinxu.com/study/201605/drop-shadow-point-to.html，， ， 这个demo里面的.cor{widtd: 0;}， ，应该是width</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=350500#respond" onclick="return addComment.moveForm( &quot;div-comment-350500&quot;, &quot;350500&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给学习">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-339133">
+				<div id="div-comment-339133" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/15fd82b1cfddcc7f9860ed9f2b6bffd2" class="avatar avatar-32" height="32" width="32">			<cite class="fn">artisan</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-339133">
+			2016年12月1日 14:50</a>		</div>
+
+		<p>drop-shadow 只兼容到 IE13，如果要考虑 IE10 的话，有什么好的解决方法么？？？</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=339133#respond" onclick="return addComment.moveForm( &quot;div-comment-339133&quot;, &quot;339133&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给artisan">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-324615">
+				<div id="div-comment-324615" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/017e2a09c13adf548123642f7b1c0868" class="avatar avatar-32" height="32" width="32">			<cite class="fn">可乐</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-324615">
+			2016年08月18日 15:11</a>		</div>
+
+		<p>移动端兼容堪忧啊啊啊</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=324615#respond" onclick="return addComment.moveForm( &quot;div-comment-324615&quot;, &quot;324615&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给可乐">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-323916">
+				<div id="div-comment-323916" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/3ac318e2b98133e4e702d722b208cad6" class="avatar avatar-32" height="32" width="32">			<cite class="fn">amy</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-323916">
+			2016年08月10日 15:48</a>		</div>
+
+		<p>加了前缀-webkit-filter: drop-shadow(#e5c5c2 30px 0); 是背景图片的影子，在pc端有用，在手机端没有用，显示不出来。</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=323916#respond" onclick="return addComment.moveForm( &quot;div-comment-323916&quot;, &quot;323916&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给amy">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-321976">
+				<div id="div-comment-321976" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/a56ae2e166d747f3df8c86c5878f3321" class="avatar avatar-32" height="32" width="32">			<cite class="fn">xujihao</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-321976">
+			2016年07月15日 11:00</a>		</div>
+
+		<p>在有些低端android机上，会给文本也加上了阴影。</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=321976#respond" onclick="return addComment.moveForm( &quot;div-comment-321976&quot;, &quot;321976&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给xujihao">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-321170">
+				<div id="div-comment-321170" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/9ffbe0c0494c7378ed02be8f77f2f46c" class="avatar avatar-32" height="32" width="32">			<cite class="fn">hadaiye</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-321170">
+			2016年06月29日 15:00</a>		</div>
+
+		<p>实践中发现用:after生成的小三角（三角是border画的），会使动态出现的整个浮层有一定机率出现多余投影的bug，而且在实际项目的那个路径下是必现的。不知道有没有人碰到过类似的情况？</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=321170#respond" onclick="return addComment.moveForm( &quot;div-comment-321170&quot;, &quot;321170&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给hadaiye">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2" id="comment-321738">
+				<div id="div-comment-321738" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/9ffbe0c0494c7378ed02be8f77f2f46c" class="avatar avatar-32" height="32" width="32">			<cite class="fn">hadaiye</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-321738">
+			2016年07月11日 17:57</a>		</div>
+
+		<p>浏览器升级后这个问题就消失了 = =！</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=321738#respond" onclick="return addComment.moveForm( &quot;div-comment-321738&quot;, &quot;321738&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给hadaiye">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-320634">
+				<div id="div-comment-320634" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/6cc966e47d4bf0b76cf90f68bd67f528" class="avatar avatar-32" height="32" width="32">			<cite class="fn">zifeng</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-320634">
+			2016年06月20日 09:38</a>		</div>
+
+		<p>多谢张大大的分享，新技能get~，有种冲动把张大大的博客看完节奏！</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=320634#respond" onclick="return addComment.moveForm( &quot;div-comment-320634&quot;, &quot;320634&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给zifeng">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-320603">
+				<div id="div-comment-320603" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/65206d1ebe54e42f99068732fbd5b95d" class="avatar avatar-32" height="32" width="32">			<cite class="fn">冯磊</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-320603">
+			2016年06月19日 13:09</a>		</div>
+
+		<p>你好，请问：<br>
+为什么我的filter里面没有drop-shadow属性啊，这样强行写<br>
+-webkit-filter: drop-shadow(2px 2px 4px 5px red);也不管用勒</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=320603#respond" onclick="return addComment.moveForm( &quot;div-comment-320603&quot;, &quot;320603&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给冯磊">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="comment-320612">
+				<div id="div-comment-320612" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/3e58242902fa8f33162f3f10df892c68" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.zhangxinxu.com/" rel="external nofollow" class="url">张 鑫旭</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-320612">
+			2016年06月19日 18:06</a>		</div>
+
+		<p>extend应该不支持吧~</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=320612#respond" onclick="return addComment.moveForm( &quot;div-comment-320612&quot;, &quot;320612&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给张 鑫旭">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-320417">
+				<div id="div-comment-320417" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/a29bb4b4776abcb492e9b0a265635787" class="avatar avatar-32" height="32" width="32">			<cite class="fn">王尖儿</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-320417">
+			2016年06月16日 17:21</a>		</div>
+
+		<p>您好，请问一下：<br>
+如果   filter: drop-shadow(0px 0px 1px black);  时，表现的效果是：1px的描边。<br>
+但是drop-shadow不支持阴影重叠，怎么杨才能使浮层模板有1px的描边的同时，还有光晕呢？</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=320417#respond" onclick="return addComment.moveForm( &quot;div-comment-320417&quot;, &quot;320417&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给王尖儿">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-admin bypostauthor even depth-2 parent" id="comment-320476">
+				<div id="div-comment-320476" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/3e58242902fa8f33162f3f10df892c68" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.zhangxinxu.com/" rel="external nofollow" class="url">张 鑫旭</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-320476">
+			2016年06月17日 13:37</a>		</div>
+
+		<p>@王尖儿 多层标签累加？</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=320476#respond" onclick="return addComment.moveForm( &quot;div-comment-320476&quot;, &quot;320476&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给张 鑫旭">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-3" id="comment-320637">
+				<div id="div-comment-320637" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/a29bb4b4776abcb492e9b0a265635787" class="avatar avatar-32" height="32" width="32">			<cite class="fn">王尖儿</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-320637">
+			2016年06月20日 10:47</a>		</div>
+
+		<p>果然成功！！多谢。<br>
+.drop-shadow-wrap {<br>
+    -webkit-filter: drop-shadow(0px 0px 5px black);<br>
+}</p>
+<p>        <i></i><br>
+        filter: drop-shadow</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=320637#respond" onclick="return addComment.moveForm( &quot;div-comment-320637&quot;, &quot;320637&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给王尖儿">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even depth-2" id="comment-321169">
+				<div id="div-comment-321169" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/9ffbe0c0494c7378ed02be8f77f2f46c" class="avatar avatar-32" height="32" width="32">			<cite class="fn">hadaiye</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-321169">
+			2016年06月29日 14:56</a>		</div>
+
+		<p>border 和 drop-shadow一起用</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=321169#respond" onclick="return addComment.moveForm( &quot;div-comment-321169&quot;, &quot;321169&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给hadaiye">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-319694">
+				<div id="div-comment-319694" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/a711283a362e8a340248b41c25ab972a" class="avatar avatar-32" height="32" width="32">			<cite class="fn">erena</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-319694">
+			2016年06月8日 14:55</a>		</div>
+
+		<p>张大神，cor的样式width写成了widtd</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=319694#respond" onclick="return addComment.moveForm( &quot;div-comment-319694&quot;, &quot;319694&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给erena">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-319231">
+				<div id="div-comment-319231" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/75fab3dce98588b02c7d420e1dad7702" class="avatar avatar-32" height="32" width="32">			<cite class="fn">禾火</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-319231">
+			2016年06月3日 13:23</a>		</div>
+
+		<p>demo里面有个错别字<br>
+.cor {<br>
+    position: absolute;<br>
+    left: -40px;<br>
+    widtd: 0; height: 0;<br>
+    overflow: hidden;<br>
+    border: 20px solid transparent;<br>
+    border-right-color: #fff;<br>
+}<br>
+widtd</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=319231#respond" onclick="return addComment.moveForm( &quot;div-comment-319231&quot;, &quot;319231&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给禾火">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-318898">
+				<div id="div-comment-318898" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/34aaa34dfae1dce1c34314a03a45915a" class="avatar avatar-32" height="32" width="32">			<cite class="fn">Zz</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318898">
+			2016年05月30日 23:15</a>		</div>
+
+		<p>又学到新知识！棒棒哒！</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318898#respond" onclick="return addComment.moveForm( &quot;div-comment-318898&quot;, &quot;318898&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给Zz">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-318565">
+				<div id="div-comment-318565" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/04ff0633ec71c114ebde29dc073f4ce9" class="avatar avatar-32" height="32" width="32">			<cite class="fn">kulam</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318565">
+			2016年05月27日 11:20</a>		</div>
+
+		<p>学到一个写三角的方法，但是filter: drop-shadow在chrome里没效果啊，我已经更新到最新版了都还是没效果，ff有效果</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318565#respond" onclick="return addComment.moveForm( &quot;div-comment-318565&quot;, &quot;318565&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给kulam">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="comment-318779">
+				<div id="div-comment-318779" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/3e58242902fa8f33162f3f10df892c68" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.zhangxinxu.com/" rel="external nofollow" class="url">张 鑫旭</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318779">
+			2016年05月29日 21:44</a>		</div>
+
+		<p>-webkit-filter别忘了私有前缀~</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318779#respond" onclick="return addComment.moveForm( &quot;div-comment-318779&quot;, &quot;318779&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给张 鑫旭">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-318427">
+				<div id="div-comment-318427" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/b67848192453fc19181ff2ca843f2d6f" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.awebman.cn/" rel="external nofollow" class="url">Apple Sun</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318427">
+			2016年05月25日 20:40</a>		</div>
+
+		<p>张神，为啥caniuse 上面写的 IE13，14，，就算算上edge 不是才12 么？IE后面的版本号怎么来的？</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318427#respond" onclick="return addComment.moveForm( &quot;div-comment-318427&quot;, &quot;318427&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给Apple Sun">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="comment-318781">
+				<div id="div-comment-318781" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/3e58242902fa8f33162f3f10df892c68" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.zhangxinxu.com/" rel="external nofollow" class="url">张 鑫旭</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318781">
+			2016年05月29日 21:46</a>		</div>
+
+		<p>你用的win10?</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318781#respond" onclick="return addComment.moveForm( &quot;div-comment-318781&quot;, &quot;318781&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给张 鑫旭">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-318272">
+				<div id="div-comment-318272" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/2f8ffca3dba9d76c24e1ff03d8c7ed26" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.bigyeast.com/" rel="external nofollow" class="url">bigyeast</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318272">
+			2016年05月23日 17:30</a>		</div>
+
+		<p>我觉得“所谓存在既有道理”，“既” 改为 “即” 更为合适</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318272#respond" onclick="return addComment.moveForm( &quot;div-comment-318272&quot;, &quot;318272&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给bigyeast">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2" id="comment-318273">
+				<div id="div-comment-318273" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/2f8ffca3dba9d76c24e1ff03d8c7ed26" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.bigyeast.com/" rel="external nofollow" class="url">bigyeast</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318273">
+			2016年05月23日 17:39</a>		</div>
+
+		<p>不改也挺好，可能理解的不一样啦</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318273#respond" onclick="return addComment.moveForm( &quot;div-comment-318273&quot;, &quot;318273&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给bigyeast">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-318155">
+				<div id="div-comment-318155" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/cf8699868de6a942a8ab57dd56e3693e" class="avatar avatar-32" height="32" width="32">			<cite class="fn">cshenger</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318155">
+			2016年05月20日 22:39</a>		</div>
+
+		<p>就在今天，设计师给了我一个带三角箭头的名片卡，我是用两个三角形叠加实现的，结果今天晚上就看到了这个，下周一去试试。</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318155#respond" onclick="return addComment.moveForm( &quot;div-comment-318155&quot;, &quot;318155&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给cshenger">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-318130">
+				<div id="div-comment-318130" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/136e05e1d2cc7c4e532c7e96f25349e9" class="avatar avatar-32" height="32" width="32">			<cite class="fn">caryhuang</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318130">
+			2016年05月20日 14:33</a>		</div>
+
+		<p>厉害，果然是大神，学习了</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318130#respond" onclick="return addComment.moveForm( &quot;div-comment-318130&quot;, &quot;318130&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给caryhuang">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-318099">
+				<div id="div-comment-318099" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/4adb0eb68bab5d725714038d1b28badf" class="avatar avatar-32" height="32" width="32">			<cite class="fn">可爱的麦尼玛</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318099">
+			2016年05月19日 22:08</a>		</div>
+
+		<p>大神，在chrome里，border: 10px dashed #beceeb; filter: drop-shadow(5px 5px 10px black);没效果啊，火狐有效果，也有可能是我的chrome版本太低了</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318099#respond" onclick="return addComment.moveForm( &quot;div-comment-318099&quot;, &quot;318099&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给可爱的麦尼玛">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2" id="comment-318267">
+				<div id="div-comment-318267" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/8c7d1deaaedbfdfbb20915dd15c0962e" class="avatar avatar-32" height="32" width="32">			<cite class="fn">好好看好好学</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318267">
+			2016年05月23日 16:32</a>		</div>
+
+		<p>用-webkit-filter chrome也有~</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318267#respond" onclick="return addComment.moveForm( &quot;div-comment-318267&quot;, &quot;318267&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给好好看好好学">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even depth-2" id="comment-318338">
+				<div id="div-comment-318338" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/973478baafda92483813446769c16974" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://hancong9104.lofter.com/" rel="external nofollow" class="url">兔子</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318338">
+			2016年05月24日 17:05</a>		</div>
+
+		<p>chrome里你需要-webkit-filter: drop-shadow(5px 5px 10px black);</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318338#respond" onclick="return addComment.moveForm( &quot;div-comment-318338&quot;, &quot;318338&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给兔子">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-318089">
+				<div id="div-comment-318089" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/1e2904102918603bd36fbe3d698f55d8" class="avatar avatar-32" height="32" width="32">			<cite class="fn">zoe</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318089">
+			2016年05月19日 17:32</a>		</div>
+
+		<p>。。。。曾被三角区域搞不上阴影折磨了好几天。每次都蒙混过关。。 -_-<br>
+万分感谢 :D~~　每天都能学到新姿势。噢耶</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318089#respond" onclick="return addComment.moveForm( &quot;div-comment-318089&quot;, &quot;318089&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给zoe">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-318068">
+				<div id="div-comment-318068" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/ab21a1b77e115a0df08314e227ad448b" class="avatar avatar-32" height="32" width="32">			<cite class="fn">Sa</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318068">
+			2016年05月19日 10:26</a>		</div>
+
+		<p>自从发现你的博客之后  就一直坚持看 学到了很多    觉得你能力一级强</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318068#respond" onclick="return addComment.moveForm( &quot;div-comment-318068&quot;, &quot;318068&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给Sa">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-318059">
+				<div id="div-comment-318059" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/bb6302b21948392ef9a45a6589c8409a" class="avatar avatar-32" height="32" width="32">			<cite class="fn">kunkka</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318059">
+			2016年05月19日 09:31</a>		</div>
+
+		<p>大神跳槽了啊！</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318059#respond" onclick="return addComment.moveForm( &quot;div-comment-318059&quot;, &quot;318059&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给kunkka">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-318030">
+				<div id="div-comment-318030" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/994446cd07776510fa0eceae7409c483" class="avatar avatar-32" height="32" width="32">			<cite class="fn">yuki</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318030">
+			2016年05月18日 17:40</a>		</div>
+
+		<p>箭头那个也可以用特殊符号◆或者字体图标配合text-shadow实现吧</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318030#respond" onclick="return addComment.moveForm( &quot;div-comment-318030&quot;, &quot;318030&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给yuki">回复</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="comment-318044">
+				<div id="div-comment-318044" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/3e58242902fa8f33162f3f10df892c68" class="avatar avatar-32" height="32" width="32">			<cite class="fn"><a href="http://www.zhangxinxu.com/" rel="external nofollow" class="url">张 鑫旭</a></cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318044">
+			2016年05月18日 21:36</a>		</div>
+
+		<p>@yuki 还是会存在阴影重叠的情况，细看会发现效果有瑕疵。</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318044#respond" onclick="return addComment.moveForm( &quot;div-comment-318044&quot;, &quot;318044&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给张 鑫旭">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-318019">
+				<div id="div-comment-318019" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/8a96acf237353af30c818f2bb19f720a" class="avatar avatar-32" height="32" width="32">			<cite class="fn">王胖</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318019">
+			2016年05月18日 14:20</a>		</div>
+
+		<p>原来可以这样！才知道PNG也可以加阴影，可以在设计师面前装逼了~~~</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318019#respond" onclick="return addComment.moveForm( &quot;div-comment-318019&quot;, &quot;318019&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给王胖">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-318013">
+				<div id="div-comment-318013" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/af3d30a350f55b2fe5c1b1def5ffa41d" class="avatar avatar-32" height="32" width="32">			<cite class="fn">catboy</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318013">
+			2016年05月18日 13:15</a>		</div>
+
+		<p>棒极了</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318013#respond" onclick="return addComment.moveForm( &quot;div-comment-318013&quot;, &quot;318013&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给catboy">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-318008">
+				<div id="div-comment-318008" class="comment-body">
+				<div class="comment-author vcard">
+			<img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/59ad2277c4186b617473c6812aecfca1" class="avatar avatar-32" height="32" width="32">			<cite class="fn">馒头</cite><span class="says">说道：</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/comment-page-1/#comment-318008">
+			2016年05月18日 10:22</a>		</div>
+
+		<p>位图 滤镜 色彩渐变在ios上太卡</p>
+
+		<div class="reply"><a class="comment-reply-link" href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/?replytocom=318008#respond" onclick="return addComment.moveForm( &quot;div-comment-318008&quot;, &quot;318008&quot;, &quot;respond&quot;, &quot;5380&quot; )" aria-label="回复给馒头">回复</a></div>
+				</div>
+		</li><!-- #comment-## -->
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+	
+	</div>
+</div>
+	<div id="sidebar" role="complementary">
+        <div id="zxx_intro" class="sldebar_out">
+            <div class="silebar_inner" itemscope="" itemtype="http://data-vocabulary.org/Person">
+                <img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/zxx_90_0824.jpg" itemprop="photo" class="zxx_head_image">
+                <div class="zxx_some_info">
+                    <p class="mb5"><span itemprop="name" class="fn">张鑫旭</span><sup><a itemprop="url" href="http://www.zhangxinxu.com/life/about/">more</a></sup>，09年<a href="http://www.hust.edu.cn/" target="_blank">华中科技大学</a>毕业，现<span itemprop="location">上海</span>，就职于<a href="http://www.yuewen.com/" itemprop="organization" target="_blank">阅文集团</a>，专注<span itemprop="role">web前端</span>偏前领域。欢迎关注我的<a href="http://weibo.com/zhangxinxu" target="_blank" rel="nofollow">新浪微博</a>。</p>
+                    <p>邮箱：<span style="font-family:arial;">zhangxinxu@zhangxinxu.com</span></p>
+                    <p>QQ：2478466830（商务合作专用）</p>
+                </div>
+                <div class="clear"></div>                
+            </div>
+        </div>
+        
+        <div id="topAdOut" class="sldebar_out top_ad_out" style="display:block!important;">
+            <div class="top_ad" style="display:block!important;">
+            	<div id="adSlideX" class="ad_slide_x" style="display: block !important; left: 0px;">
+                    <div class="ad_inner">
+                        <a href="http://www.yidengxuetang.com/recruit/?hmsr=zxx_gaoduan_web_0204" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;YIDENG&#39;, &#39;yideng&#39;, &#39;Top Ad&#39;]);"><img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/zhijia.png" width="336" height="300"></a>
+                    </div><div class="ad_inner">
+                        <a href="http://www.zhinengshe.com/?utm_source=zxx-web&amp;utm_medium=banner&amp;utm_term=s2&amp;utm_content=2016&amp;utm_campaign=zz" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;zhNsh&#39;, &#39;zhiNshe&#39;, &#39;Top Ad&#39;]);"><img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/zhiNshe-n.png" srcset="http://image.zhangxinxu.com/image/blog/201607/zhiNshe.png 2x" width="336" height="300"></a>
+                    </div><div class="ad_inner" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;MWAD&#39;, &#39;MiaoWei&#39;, &#39;Top Ad&#39;]);">
+                        <a href="http://www.miaov.com/?form=zhangxinxu.com" target="_blank"><img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/mv336_300.jpg" width="336" height="300"></a>
+                    </div>
+                </div>
+                <!-- 索引 -->
+                <div id="adIndexX" class="ad_index_x">
+                	<a href="javascript:" class="ad_index_a active">1</a>
+                    <a href="javascript:" class="ad_index_a">2</a>
+                    <a href="javascript:" class="ad_index_a">3</a>
+                </div>
+            </div>
+        </div><script>if (window.location != window.parent.location) { window.parent.location = window.location; }</script>    	<div class="sldebar_out">
+            <div class="silebar_inner slide_list">
+                <ul>
+                    <li id="search-3" class="widget widget_search"><form method="get" id="searchform" action="http://www.zhangxinxu.com/wordpress/">
+<label class="hidden" for="s">Search for:</label>
+<div><input type="search" placeholder="翻页太辛苦，试试直接搜索" value="" name="s" id="s">
+<input type="submit" id="searchsubmit" data-value="Search" value="搜索">
+</div>
+</form>
+</li><li id="categories-4" class="widget widget_categories"><h2 class="widgettitle">文章分类</h2>		<ul>
+	<li class="cat-item cat-item-3"><a href="http://www.zhangxinxu.com/wordpress/category/css/">css相关</a> (239)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.zhangxinxu.com/wordpress/category/graphic/">graphic相关</a> (68)
+<ul class="children">
+	<li class="cat-item cat-item-81"><a href="http://www.zhangxinxu.com/wordpress/category/graphic/as3%e8%8f%9c%e5%8d%95/">as3菜单</a> (32)
+</li>
+	<li class="cat-item cat-item-896"><a href="http://www.zhangxinxu.com/wordpress/category/graphic/canvas-graphic/">canvas相关</a> (10)
+</li>
+	<li class="cat-item cat-item-895"><a href="http://www.zhangxinxu.com/wordpress/category/graphic/svg-graphic/">SVG相关</a> (24)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1097"><a href="http://www.zhangxinxu.com/wordpress/category/html%e7%9b%b8%e5%85%b3/">HTML相关</a> (24)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.zhangxinxu.com/wordpress/category/js/">js相关</a> (123)
+<ul class="children">
+	<li class="cat-item cat-item-60"><a href="http://www.zhangxinxu.com/wordpress/category/js/jquery-about/">jquery相关</a> (43)
+</li>
+	<li class="cat-item cat-item-180"><a href="http://www.zhangxinxu.com/wordpress/category/js/js%e5%ae%9e%e4%be%8b/">js实例</a> (63)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-648"><a href="http://www.zhangxinxu.com/wordpress/category/mobile%e7%9b%b8%e5%85%b3/">mobile相关</a> (11)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.zhangxinxu.com/wordpress/category/ps/">ps相关</a> (13)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.zhangxinxu.com/wordpress/category/web/">web综合</a> (41)
+</li>
+	<li class="cat-item cat-item-198"><a href="http://www.zhangxinxu.com/wordpress/category/%e5%a4%96%e6%96%87%e7%bf%bb%e8%af%91/">外文翻译</a> (37)
+</li>
+		</ul>
+</li><li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">文章存档</h2>		<ul>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/05/">2017年五月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/04/">2017年四月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/03/">2017年三月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/02/">2017年二月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2017/01/">2017年一月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/12/">2016年十二月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/11/">2016年十一月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/10/">2016年十月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/09/">2016年九月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/08/">2016年八月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/07/">2016年七月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/06/">2016年六月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/05/">2016年五月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/04/">2016年四月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/03/">2016年三月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/02/">2016年二月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2016/01/">2016年一月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/12/">2015年十二月</a>&nbsp;(2)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/11/">2015年十一月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/10/">2015年十月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/08/">2015年八月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/07/">2015年七月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/06/">2015年六月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/05/">2015年五月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/04/">2015年四月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/03/">2015年三月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/02/">2015年二月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2015/01/">2015年一月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/12/">2014年十二月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/11/">2014年十一月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/10/">2014年十月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/09/">2014年九月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/08/">2014年八月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/07/">2014年七月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/06/">2014年六月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/05/">2014年五月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/04/">2014年四月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/03/">2014年三月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/02/">2014年二月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2014/01/">2014年一月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/12/">2013年十二月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/11/">2013年十一月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/10/">2013年十月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/09/">2013年九月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/08/">2013年八月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/07/">2013年七月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/06/">2013年六月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/05/">2013年五月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/04/">2013年四月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/03/">2013年三月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/02/">2013年二月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2013/01/">2013年一月</a>&nbsp;(10)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/12/">2012年十二月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/11/">2012年十一月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/10/">2012年十月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/09/">2012年九月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/08/">2012年八月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/07/">2012年七月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/06/">2012年六月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/05/">2012年五月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/04/">2012年四月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/03/">2012年三月</a>&nbsp;(9)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/02/">2012年二月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2012/01/">2012年一月</a>&nbsp;(4)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/12/">2011年十二月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/11/">2011年十一月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/10/">2011年十月</a>&nbsp;(3)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/09/">2011年九月</a>&nbsp;(9)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/08/">2011年八月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/07/">2011年七月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/06/">2011年六月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/05/">2011年五月</a>&nbsp;(8)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/04/">2011年四月</a>&nbsp;(8)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/03/">2011年三月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/02/">2011年二月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2011/01/">2011年一月</a>&nbsp;(5)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/12/">2010年十二月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/11/">2010年十一月</a>&nbsp;(8)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/10/">2010年十月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/09/">2010年九月</a>&nbsp;(10)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/08/">2010年八月</a>&nbsp;(10)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/07/">2010年七月</a>&nbsp;(10)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/06/">2010年六月</a>&nbsp;(8)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/05/">2010年五月</a>&nbsp;(11)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/04/">2010年四月</a>&nbsp;(14)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/03/">2010年三月</a>&nbsp;(11)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/02/">2010年二月</a>&nbsp;(1)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2010/01/">2010年一月</a>&nbsp;(16)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/12/">2009年十二月</a>&nbsp;(14)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/11/">2009年十一月</a>&nbsp;(7)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/10/">2009年十月</a>&nbsp;(6)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/09/">2009年九月</a>&nbsp;(36)</li>
+	<li><a href="http://www.zhangxinxu.com/wordpress/2009/08/">2009年八月</a>&nbsp;(12)</li>
+		</ul>
+</li>		<li id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widgettitle">最新文章</h2>		<ul>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/05/html-accesskey/">HTML accesskey属性与web自定义键盘快捷访问</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/05/html-tabindex/">HTML tabindex属性与web网页键盘无障碍访问</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/05/html-area-map/">HTML &lt;area&gt;&lt;map&gt;标签及在实际开发中的应用</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/04/css-focus-js-improve-accessibility-keyboard/">CSS :focus伪类JS focus事件提高网站键盘可访问性</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/03/css3-font-face-src-local/">真正了解CSS3背景下的@font face规则</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/03/css-font-family-chinese-english/">CSS font-family常见中文字体对应的英文名称</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/03/canvas-2d-cool-affect-skills-technology/">canvas 2D炫酷动效的实现套路和需要的技术积累</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/03/transparent-jpg-svg/">【翻译】借助SVG实现背景透明JPG图片</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/03/offset-path-css-animation/">使用CSS offset-path让元素沿着不规则路径运动</a>
+						</li>
+					<li>
+				<a href="http://www.zhangxinxu.com/wordpress/2017/02/font-kerning-font-smoothing-font-variant/">了解CSS属性font-kerning,font-smoothing,font-variant</a>
+						</li>
+				</ul>
+		</li><li id="overall-top-10-posts" class="widget widget_dailytopten_overall"><h2 class="widgettitle">热门总排行</h2><ul>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/">好吧，CSS3 3D transform变换，不过如此！</a> (405556)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2011/09/%e5%9f%ba%e4%ba%8ehtml5%e7%9a%84%e5%8f%af%e9%a2%84%e8%a7%88%e5%a4%9a%e5%9b%be%e7%89%87ajax%e4%b8%8a%e4%bc%a0/">基于HTML5的可预览多图片Ajax上传</a> (380058)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/12/jquery-powerfloat%e4%b8%87%e8%83%bd%e6%b5%ae%e5%8a%a8%e5%b1%82%e4%b8%8b%e6%8b%89%e5%b1%82%e6%8f%92%e4%bb%b6/">jQuery powerFloat万能浮动层下拉层插件</a> (367101)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/03/every-browser-support-html5-video/">让所有浏览器支持HTML5 video视频标签</a> (313858)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/12/css-box-flex%e5%b1%9e%e6%80%a7%ef%bc%8c%e7%84%b6%e5%90%8e%e5%bc%b9%e6%80%a7%e7%9b%92%e5%ad%90%e6%a8%a1%e5%9e%8b%e7%ae%80%e4%bb%8b/">CSS box-flex属性，然后弹性盒子模型简介</a> (308647)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/01/jquery-pagination-ajax%e5%88%86%e9%a1%b5%e6%8f%92%e4%bb%b6%e4%b8%ad%e6%96%87%e8%af%a6%e8%a7%a3/">jQuery Pagination Ajax分页插件中文详解</a> (292145)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/11/%e6%8b%9c%e6%8b%9c%e4%ba%86%e6%b5%ae%e5%8a%a8%e5%b8%83%e5%b1%80-%e5%9f%ba%e4%ba%8edisplayinline-block%e7%9a%84%e5%88%97%e8%a1%a8%e5%b8%83%e5%b1%80/">拜拜了,浮动布局-基于display:inline-block的列表布局</a> (290734)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/04/%e8%ae%a9ie6ie7ie8%e6%b5%8f%e8%a7%88%e5%99%a8%e6%94%af%e6%8c%81css3%e5%b1%9e%e6%80%a7/">让IE6/IE7/IE8浏览器支持CSS3属性</a> (280256)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%e7%9f%a9%e9%98%b5/">理解CSS3 transform中的Matrix(矩阵)</a> (255749)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2009/09/%e5%85%b3%e4%ba%8e%e6%96%87%e5%ad%97%e5%86%85%e5%ae%b9%e6%ba%a2%e5%87%ba%e7%94%a8%e7%82%b9%e7%82%b9%e7%82%b9-%e7%9c%81%e7%95%a5%e5%8f%b7%e8%a1%a8%e7%a4%ba/">关于文字内容溢出用点点点(...)省略号表示</a> (233375)</li>
+</ul>
+</li><li id="daily-top-10-posts" class="widget widget_dailytopten"><h2 class="widgettitle">今日热门</h2><ul>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/">好吧，CSS3 3D transform变换，不过如此！</a> (627)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/03/every-browser-support-html5-video/">让所有浏览器支持HTML5 video视频标签</a> (596)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/04/css%e5%ae%9e%e7%8e%b0%e5%85%bc%e5%ae%b9%e6%80%a7%e7%9a%84%e6%b8%90%e5%8f%98%e8%83%8c%e6%99%afgradient%e6%95%88%e6%9e%9c/">CSS实现兼容性的渐变背景(gradient)效果</a> (574)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/04/%e8%ae%a9ie6ie7ie8%e6%b5%8f%e8%a7%88%e5%99%a8%e6%94%af%e6%8c%81css3%e5%b1%9e%e6%80%a7/">让IE6/IE7/IE8浏览器支持CSS3属性</a> (517)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/11/%e6%8b%9c%e6%8b%9c%e4%ba%86%e6%b5%ae%e5%8a%a8%e5%b8%83%e5%b1%80-%e5%9f%ba%e4%ba%8edisplayinline-block%e7%9a%84%e5%88%97%e8%a1%a8%e5%b8%83%e5%b1%80/">拜拜了,浮动布局-基于display:inline-block的列表布局</a> (489)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2011/09/html5-localstorage%e6%9c%ac%e5%9c%b0%e5%ad%98%e5%82%a8%e5%ae%9e%e9%99%85%e5%ba%94%e7%94%a8%e4%b8%be%e4%be%8b/">HTML5 localStorage本地存储实际应用举例</a> (463)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%e5%8e%bb%e9%99%a4%e9%97%b4%e8%b7%9d/">去除inline-block元素间间距的N种方法</a> (454)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2010/12/css-box-flex%e5%b1%9e%e6%80%a7%ef%bc%8c%e7%84%b6%e5%90%8e%e5%bc%b9%e6%80%a7%e7%9b%92%e5%ad%90%e6%a8%a1%e5%9e%8b%e7%ae%80%e4%bb%8b/">CSS box-flex属性，然后弹性盒子模型简介</a> (434)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2017/05/html-accesskey/">HTML accesskey属性与web自定义键盘快捷访问</a> (419)</li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%e7%9f%a9%e9%98%b5/">理解CSS3 transform中的Matrix(矩阵)</a> (382)</li>
+</ul>
+</li>                </ul>
+            </div>
+        </div>
+	</div>
+<div id="footer" role="contentinfo">
+<p>
+Powered by <a href="http://wordpress.org/">WordPress</a> | Designed by <a href="http://www.zhangxinxu.com/">zhangxinxu</a><br>
+Copyright© 2009-2017 张鑫旭-鑫空间-鑫生活<br>
+<a target="_blank" href="http://www.miibeian.gov.cn/">鄂ICP备09015569号</a>
+</p>
+</div>
+<script src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/logger.js"></script></div>
+
+
+<script type="text/javascript" src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/form.js"></script>
+<script type="text/javascript" src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/comment-reply.min.js"></script>
+
+<div id="footbar" role="toolbar" class="">
+	<div class="foot_yy_x hidden" id="footYyX">
+    	<div class="foot_yy_title">
+        	<span class="l">我的应用</span>
+            <a href="javascript:" class="r" id="footYYClose">-</a>
+        </div>
+        <div class="ml10 mr10 foot_yy_dv">工具与应用</div>
+        <div class="mt5">
+        	<a class="foot_yy_a" href="http://www.zhangxinxu.com/sp/base64.html">图片转base64(拖进来)</a>
+			<a class="foot_yy_a" href="http://browserhacks.com/">浏览器hack</a>
+            <a class="foot_yy_a" href="http://cubic-bezier.com/">CSS贝塞尔曲线可视化</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/sp/css-compress-mini.html">CSS在线压缩工具</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/sp/calculator.html">简易在线计算器</a>
+        </div>
+        <div class="ml10 mr10 foot_yy_dv">在线资源</div>
+        <div class="mt5">
+        	<a class="foot_yy_a" href="http://www.zhangxinxu.com/jq/api14/">jQuery 1.4 API中文版</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/GitHub/demo-Snap.svg/demo/basic/">Snap.svg中文文档</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/jq/stylus/">stylus中文版参考文档</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/css3/">CSS3中文共享参考指南</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/sp/character.html">非主流字符及字符图案</a>
+            <a class="foot_yy_a" href="http://www.zhangxinxu.com/jq/mt/">MooTools 1.2中文文档</a>
+        </div>
+        <div>&nbsp;</div>
+        <a href="javascript:" class="foot_yy foot_yy_on nowrap" id="footYYOff"><img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/zxx_ico.png" class="vimg"> 我的应用</a>
+    </div>
+    <a href="javascript:" class="foot_yy nowrap" id="footYYShow"><img src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/zxx_ico.png" class="vimg"> 我的应用</a>
+    <span class="foot_rss l">
+    	<a class="foot_rss_a" href="http://www.zhangxinxu.com/wordpress/?feed=rss2">文章(RSS)</a>
+         
+    </span>
+    <a href="http://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/#" id="backToTop" class="foot_top">返回顶部↑</a>
+	<a href="http://www.zhangxinxu.com/wordpress/wp-login.php" class="foot_login"><i class="icon-male"></i>登录</a>
+</div>
+
+<script src="./CSS3 filter_drop-shadow滤镜与box-shadow区别应用 « 张鑫旭-鑫空间-鑫生活_files/script-min.js"></script>
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-11205167-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<div id="adYidengFloat" class="da_bottom hidden" style="display: none; bottom: 0px;">
+                <div class="da_yd">
+                    <span class="l hidden">如果你有1~3年前端开发经验，不妨</span>
+                    <a href="javascript:" class="r hidden" title="不敢兴趣">×</a>
+                </div>
+                <a href="http://www.yidengxuetang.com/recruit/?f=zhangxinxu.com" target="_blank" class="da_bottom_w" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;YIDENG&#39;, &#39;yideng&#39;, &#39;float&#39;]);"></a>
+            </div></body></html>
